@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <title>Startup preview - Main page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="custom" content="MTkyOTQ5" id="snextras">
+        <link rel="icon" href="i/favicon-default.png">
+        <!-- AOS 3.0.0-beta.6 plugin CSS (Animations) -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&amp;subset=latin&amp;display=swap" rel="stylesheet" id="sf-google-fonts">
+        <!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+        <link href="https://designmodo.com/startup/app/pub/192949/2722700856dca9851170cfc95362d761/styles/css/styles.min.css?v=1663585255" rel="stylesheet" id="sf-custom-css">
+        <!-- jQuery 3.6.0 (uncomment line below if you need jQuery) -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <!-- Styles for controls (delete, move, edit, block name) -->
+        <link href="app-dist/css/preview.css" rel="stylesheet">
+        <!-- Open graph settings (social networks sharing settings) -->
+        <!-- Open graph settings end -->
+    <style>
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.ucbzx-button-wrapper {
+    position: absolute !important;
+    z-index: 1000 !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.ucbzx-button {
+    display: block;
+    border: none !important;
+    /* outline: none !important; */
+    background: #3c3c54 !important;
+    padding: 0 !important;
+    border-radius: 5px;
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.ucbzx-button:active {
+    border: none !important;
+}
+
+.ucbzx-button:disabled {
+    cursor: default !important;
+}
+
+.ucbzx-download-img {
+    display: block !important;
+    width: 36px !important;
+    height: 36px !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+}
+
+.ucbzx-hide {
+    display: none !important;
+}
+
+.ucbzx-loader {
+    display: block;
+    box-sizing: content-box !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 3px !important;
+    animation: rotate 1s linear infinite;
+    margin: 0 !important;
+}
+
+/*
+    RESOLUTIONS CHOICE
+*/
+
+.ucbzx-resolutions-list {
+    position: absolute !important;
+    top: 36px !important;
+    right: 0 !important;
+    background: #3c3c54 !important;
+    color: #dbdbdb !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.ucbzx-resolutions-list li {
+    margin: 4px !important;
+    padding: 0 !important;
+    font-weight: bold !important;
+    white-space: nowrap !important;
+    width: 130px !important;
+    height: 30px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.ucbzx-list-item-tickbox {
+    width: 20px !important;
+    height: 20px !important;
+    background: rgba(255, 255, 255, 0.219) !important;
+    /* border-radius: 5px !important; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* font-size: 17px !important; */
+    /* border: 1px solid rgba(255, 255, 255, 0.835) !important; */
+    cursor: pointer !important;
+    margin-left: 4px !important;
+}
+
+.ucbzx-resolutions-list > li::before {
+    display: none;
+}
+
+.ucbzx-list-item-tickbox:not(.ucbzx-list-item-tickbox-checked):hover {
+    background: rgba(255, 255, 255, 0.37) !important;
+}
+
+.ucbzx-list-item-tickbox.ucbzx-list-item-tickbox-checked {
+    cursor: default !important;
+}
+
+.ucbzx-list-item-tickbox-checked::after {
+    content: "\2713" !important;
+    color: white !important;
+}
+
+.ucbzx-list-item-text {
+    /* border-radius: 5px !important; */
+    flex-grow: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    height: 100% !important;
+    margin-left: 10px !important;
+}
+
+.ucbzx-list-item-text:hover {
+    background: rgba(255, 255, 255, 0.37) !important;
+    color: white !important;
+}
+
+/* account for the fact that we got rid of the tickbox there */
+.ucbzx-resolutions-list li[data-type="captions"] .ucbzx-list-item-text {
+    margin-left: 34px !important;
+    font-style: italic;
+}
+
+/*
+    MISC
+*/
+
+.ucbzx-arrow-container {
+    background: none !important;
+    position: absolute !important;
+    top: 36px !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 18px solid transparent !important;
+    border-right: 18px solid transparent !important;
+    border-top: 18px solid #3c3c54 !important;
+    /* border-bottom: none !important; */
+    cursor: pointer !important;
+}
+
+.ucbzx-arrow-container::after {
+    position: absolute !important;
+    top: -18px !important;
+    left: -4px !important;
+    content: "" !important;
+    border: 1px solid #dbdbdb !important;
+    border-width: 0 3px 3px 0 !important;
+    display: inline-block !important;
+    padding: 3px !important;
+    transform: rotate(45deg);
+}
+
+.ucbzx-button:focus,
+.ucbzx-arrow-container:focus,
+.ucbzx-resolutions-list:focus,
+.ucbzx-list-item-tickbox:focus,
+.ucbzx-list-item-text:focus {
+    outline: 1px solid white !important;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+    RESET STYLES
+*/
+.ucbzx-button-wrapper button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    outline: none;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+}
+
+.ucbzx-button-wrapper li,
+.ucbzx-button-wrapper li * {
+    margin: 0;
+    font: inherit;
+    font-style: inherit;
+    font-size: inherit;
+}</style></head> 
+    <body data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-delay="0">
+<!-- Navigation 3 -->
+    <nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+        <div class="d-block d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                        <a class="btn btn-width-equal-height d-lg-none rounded-circle custom-mobile-nav-btn" data-bs-toggle="offcanvas" data-bs-target="#custom-id-v92z407l">
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-light-1">
+                                <path d="M2.00016 5.33333H14.0002C14.177 5.33333 14.3465 5.2631 14.4716 5.13807C14.5966 5.01305 14.6668 4.84348 14.6668 4.66667C14.6668 4.48986 14.5966 4.32029 14.4716 4.19526C14.3465 4.07024 14.177 4 14.0002 4H2.00016C1.82335 4 1.65378 4.07024 1.52876 4.19526C1.40373 4.32029 1.3335 4.48986 1.3335 4.66667C1.3335 4.84348 1.40373 5.01305 1.52876 5.13807C1.65378 5.2631 1.82335 5.33333 2.00016 5.33333ZM14.0002 10.6667H2.00016C1.82335 10.6667 1.65378 10.7369 1.52876 10.8619C1.40373 10.987 1.3335 11.1565 1.3335 11.3333C1.3335 11.5101 1.40373 11.6797 1.52876 11.8047C1.65378 11.9298 1.82335 12 2.00016 12H14.0002C14.177 12 14.3465 11.9298 14.4716 11.8047C14.5966 11.6797 14.6668 11.5101 14.6668 11.3333C14.6668 11.1565 14.5966 10.987 14.4716 10.8619C14.3465 10.7369 14.177 10.6667 14.0002 10.6667ZM14.0002 7.33333H2.00016C1.82335 7.33333 1.65378 7.40357 1.52876 7.5286C1.40373 7.65362 1.3335 7.82319 1.3335 8C1.3335 8.17681 1.40373 8.34638 1.52876 8.4714C1.65378 8.59643 1.82335 8.66667 2.00016 8.66667H14.0002C14.177 8.66667 14.3465 8.59643 14.4716 8.4714C14.5966 8.34638 14.6668 8.17681 14.6668 8C14.6668 7.82319 14.5966 7.65362 14.4716 7.5286C14.3465 7.40357 14.177 7.33333 14.0002 7.33333Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-6 text-center aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                        <a href="#">
+                            <img src="i/logo-dark.png" srcset="i/logo-dark@2x.png 2x" alt="" class="img-fluid aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                        </a>
+                    </div>
+                    <div class="col-3 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-bg-3" id="custom-id-v92z407l" aria-hidden="true">
+            <div class="offcanvas-header">
+                <a href="#">
+                    <img src="i/logo-dark.png" srcset="i/logo-dark@2x.png 2x" alt="" class="img-fluid">             
+                </a>
+                <a class="btn btn-sm btn-width-equal-height btn-bg-3" data-bs-dismiss="offcanvas">
+                    <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-2">
+                        <path d="M8.9398 8L13.1398 3.80667C13.2653 3.68113 13.3359 3.51087 13.3359 3.33333C13.3359 3.1558 13.2653 2.98554 13.1398 2.86C13.0143 2.73447 12.844 2.66394 12.6665 2.66394C12.4889 2.66394 12.3187 2.73447 12.1931 2.86L7.9998 7.06L3.80646 2.86C3.68093 2.73447 3.51066 2.66394 3.33313 2.66394C3.1556 2.66394 2.98533 2.73447 2.8598 2.86C2.73426 2.98554 2.66374 3.1558 2.66374 3.33333C2.66374 3.51087 2.73426 3.68113 2.8598 3.80667L7.0598 8L2.8598 12.1933C2.79731 12.2553 2.74771 12.329 2.71387 12.4103C2.68002 12.4915 2.6626 12.5787 2.6626 12.6667C2.6626 12.7547 2.68002 12.8418 2.71387 12.9231C2.74771 13.0043 2.79731 13.078 2.8598 13.14C2.92177 13.2025 2.99551 13.2521 3.07675 13.2859C3.15798 13.3198 3.24512 13.3372 3.33313 13.3372C3.42114 13.3372 3.50827 13.3198 3.58951 13.2859C3.67075 13.2521 3.74449 13.2025 3.80646 13.14L7.9998 8.94L12.1931 13.14C12.2551 13.2025 12.3288 13.2521 12.4101 13.2859C12.4913 13.3198 12.5785 13.3372 12.6665 13.3372C12.7545 13.3372 12.8416 13.3198 12.9228 13.2859C13.0041 13.2521 13.0778 13.2025 13.1398 13.14C13.2023 13.078 13.2519 13.0043 13.2857 12.9231C13.3196 12.8418 13.337 12.7547 13.337 12.6667C13.337 12.5787 13.3196 12.4915 13.2857 12.4103C13.2519 12.329 13.2023 12.2553 13.1398 12.1933L8.9398 8Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">
+Home                    
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">
+Features                    
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">
+Blog                    
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">
+Prices                  
+                    </a>
+                </div>
+                <a href="#" class="btn btn-action-1 btn-sm rounded-2 mt-4">
+Get Started
+                </a>
+            </div>
+        </div>
+        <div class="d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-8 d-flex">
+                        <a href="#">
+                            <img src="i/logo-dark.png" srcset="i/logo-dark@2x.png 2x" alt="" class="img-fluid me-4 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">                       
+                        </a>
+                        <a href="#" class="fw-bold mx-4 text-dark-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
+                            Away
+                        </a>
+                        <a href="#" class="fw-bold mx-4 text-dark-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                            Futures
+                        </a>
+                        <a href="#" class="fw-bold mx-4 text-dark-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
+                            Bloop
+                        </a>
+                        <a href="#" class="fw-bold mx-4 text-dark-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+                            Precios
+                        </a>
+                    </div>
+                    <div class="col-2 text-end">
+                        <a href="#" class="btn btn-action-1 btn-sm rounded-2 aos-init aos-animate" data-aos="fade-down" data-aos-delay="650">
+Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header 1 -->
+        <header class="py-20 bg-bg-3">
+            <div class="container">
+                <div class="row align-items-center flex-md-row-reverse">
+                    <div class="col-md-6">
+                        <!-- https://res.cloudinary.com/dklongley/image/upload/w_636/Screenshot_from_2022-06-09_14-50-39.png -->
+                        <img src="i/thegirls.png" alt="" class="w-100 img-fluid" >            
+                    </div>
+                    <div class="col-md-6 mt-8 mt-md-0">
+                        <h1 class="display-3 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
+                        Your big idea starts here.              
+                        </h1>
+                        <p class="mb-8 fs-1 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+    Meet your new sidekick. The powerful tool that helps you create something special. 
+                        </p>
+                        <a href="#" class="btn btn-outline-action-6 btn-lg aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
+                        Explore Design              
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Feature 4 -->
+            <section class="py-10 py-lg-20 bg-bg-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                            <h2 class="display-5 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+        Your big idea starts here
+                            </h2>
+                            <p class="fs-2 mb-8 mb-md-15 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+        Start growing in half the time with an 
+                                <span class="text-nowrap">
+        all-in-one
+                                </span>
+        website builder - no more long hours spent on the boring stuff! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-10 col-12 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                            <div class="border-bottom border-bottom-dark-2 opacity-30">
+                            </div>
+                        </div>
+                        <div class="mb-8 mb-md-0 col-md-3 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+                            <h5 class="mb-4">
+Build Quick
+                            </h5>
+                            <p class="mb-0">
+That’s a brilliant idea you’ve got. Build it, and they will come. 
+                            </p>
+                        </div>
+                        <div class="mb-8 mb-md-0 col-sm-6 col-md-3 aos-init aos-animate" data-aos="fade-down" data-aos-delay="750">
+                            <h5 class="mb-4">
+A Lot of blocks
+                            </h5>
+                            <p class="mb-0">
+The website builder to help you grow - free from bugs and errors.
+                            </p>
+                        </div>
+                        <div class="mb-8 mb-sm-0 col-sm-6 col-md-3 aos-init aos-animate" data-aos="fade-down" data-aos-delay="1000">
+                            <h5 class="mb-4">
+Fully Responsive
+                            </h5>
+                            <p class="mb-0">
+Want to create something beautiful? Now you can. In hours, not weeks. 
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 aos-init aos-animate" data-aos="fade-down" data-aos-delay="1250">
+                            <h5 class="mb-4">
+Build Today
+                            </h5>
+                            <p class="mb-0">
+Get your idea out there in the way you want it. Start with Startup.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial 2 -->
+                <section class="py-10 py-lg-20 bg-bg-3">
+                    <div class="container">
+                        <div class="row justify-content-center text-md-center">
+                            <div class="col-lg-10 col-xl-8">
+                                <h2 class="display-5 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                    Better landing for your startup
+                                </h2>
+                            </div>
+                            <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5 mb-15">
+                                <p class="fs-2 mb-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
+                    Start growing in half the time with an 
+                                    <span class="text-nowrap">
+all-in-one
+                                    </span>
+website builder - no more long hours spent on the boring stuff! 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                                <div class="d-flex flex-column justify-content-between border rounded-2 h-100 p-6">
+                                    <p class="fs-4">
+                "Wow what great service, I love it! It's is the most valuable business resource we have EVER purchased."
+                                    </p>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img src="i/testimonial-2-1.jpg" srcset="i/testimonial-2-1@2x.jpg 2x" alt="" class="img-fluid rounded-circle">
+                                        </div>
+                                        <div class="col ps-1">
+                                            <h6>
+Marvin McKinney
+                                            </h6>
+                                            <p class="fs-5 mb-0">
+Marketing Coordinator
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
+                                <div class="d-flex flex-column justify-content-between border rounded-2 h-100 p-6">
+                                    <p class="fs-4">
+"Thank you for making it painless, pleasant and most of all hassle free! I'd be lost without It."
+                                    </p>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img src="i/testimonial-2-2.jpg" srcset="i/testimonial-2-2@2x.jpg 2x" alt="" class="img-fluid rounded-circle">
+                                        </div>
+                                        <div class="col ps-1">
+                                            <h6>
+Floyd Miles
+                                            </h6>
+                                            <p class="fs-5 mb-0">
+President of Sales
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+                                <div class="d-flex flex-column justify-content-between border rounded-2 h-100 p-6">
+                                    <p class="fs-4">
+"It's all good. Man, this thing is getting better and better as I learn more about it. I'd be lost without It's. Thanks it!"
+                                    </p>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img src="i/testimonial-2-3.jpg" srcset="i/testimonial-2-3@2x.jpg 2x" alt="" class="img-fluid rounded-circle">
+                                        </div>
+                                        <div class="col ps-1">
+                                            <h6>
+Darrell Steward
+                                            </h6>
+                                            <p class="fs-5 mb-0">
+Dog Trainer
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-6 mb-lg-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
+                                <div class="d-flex flex-column justify-content-between border rounded-2 h-100 p-6">
+                                    <p class="fs-4">
+"It's is the coolest, most happening thing around! Not able to tell you how happy I am with it. "
+                                    </p>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img src="i/testimonial-2-4.jpg" srcset="i/testimonial-2-4@2x.jpg 2x" alt="" class="img-fluid rounded-circle">
+                                        </div>
+                                        <div class="col ps-1">
+                                            <h6>
+Leslie Alexander
+                                            </h6>
+                                            <p class="fs-5 mb-0">
+Web Designer
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-6 mb-md-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+                                <div class="d-flex flex-column justify-content-between border rounded-2 h-100 p-6">
+                                    <p class="fs-4">
+"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business."
+                                    </p>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img src="i/testimonial-2-5.jpg" srcset="i/testimonial-2-5@2x.jpg 2x" alt="" class="img-fluid rounded-circle">
+                                        </div>
+                                        <div class="col ps-1">
+                                            <h6>
+Theresa Webb
+                                            </h6>
+                                            <p class="fs-5 mb-0">
+Nursing Assistant
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-down" data-aos-delay="650">
+                                <div class="d-flex flex-column justify-content-between border rounded-2 h-100 p-6">
+                                    <p class="fs-4">
+"You won't regret it. I was amazed at the quality of it. I am really satisfied with my it."
+                                    </p>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <img src="https://designmodo.com/startup/app/smiles.php?icon=smile&amp;search=P2lkPTE0MDA5JmluRWRpdG9yPTE=&amp;path=L3N0YXJ0dXAvYXBwL3ByZXZpZXcucGhw&amp;e=MTkyOTQ5" id="js-get-smile" class="visually-hidden" style="opacity: 0.01;">
+                                            <img src="i/testimonial-2-6.jpg" srcset="i/testimonial-2-6@2x.jpg 2x" alt="" class="img-fluid rounded-circle">
+                                        </div>
+                                        <div class="col ps-1">
+                                            <h6>
+Dianne Russell
+                                            </h6>
+                                            <p class="fs-5 mb-0">
+Medical Assistant
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Call to action 3 -->
+                    <section class="py-10 py-lg-20 bg-bg-3 text-center text-lg-start">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-8 col-md-6">
+                                    <img src="https://res.cloudinary.com/dklongley/image/upload/w_636,c_fill,ar_1:1,g_auto/v1663667883/new-business-dev.jpg" alt="" class="img-fluid rounded-circle" >
+                                </div>
+                                <div class="ps-lg-12 ps-xl-3 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                                    <h2 class="display-5 mb-6 mt-8 mt-lg-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+Gather incredible ideas for your own startup 
+                                    </h2>
+                                    <p class="fs-1 mb-8 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+Meet your new sidekick. The powerful tool that helps you create something special. 
+                                    </p>
+                                    <a href="#" class="btn btn-action-1 me-4 aos-init aos-animate" data-aos="fade-down" data-aos-delay="650">
+Get Started
+                                    </a>
+                                    <a href="#" class="btn btn-outline-dark-2 aos-init aos-animate" data-aos="fade-down" data-aos-delay="750">
+Learn More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="py-10 py-lg-20 bg-bg-3">
+                        <div class="container">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+                                    <h2 class="display-5 mb-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                                            Startup Framework
+                                    </h2>
+                                    <p class="mb-10 fs-2 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
+                                            Out with the old, in with the new. The new is quicker, and it’s easier too.
+                                    </p>
+                                </div>
+                            </div>
+                            <label class="form-check form-switch text-center mb-12 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                                <span class="form-check-label font-heading fs-4 text-dark-1 me-4">
+Monthly
+                                </span>
+                                <input class="form-check-input form-control-lg" type="checkbox" name="switch" data-bs-target="#custom-id-2miyhl8v" checked="checked">
+                                <span class="form-switch-wrapper">
+                                    <div class="form-switch-pin">
+                                    </div>
+                                </span>
+                                <span class="form-check-label ms-2 font-heading fs-4 text-dark-1">
+Annually
+                                </span>
+                            </label>
+                            <div id="custom-id-2miyhl8v" class="carousel slide carousel-fade aos-init aos-animate" data-bs-interval="false" data-bs-touch="false" data-aos="fade-down" data-aos-delay="400">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item bg-bg-3">
+                                        <div class="row justify-content-center">
+                                            <div class="mb-4 mb-md-0 col-lg-5 col-md-6 col-sm-10">
+                                                <div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 border-bg-2 bg-bg-2">
+                                                    <div>
+                                                        <h5 class="fs-3 fw-bold mb-2 text-dark-2">
+                    Basic
+                                                        </h5>
+                                                        <h2 class="display-6 mb-6">
+                    $18/m
+                                                        </h2>
+                                                        <div class="mb-6 border-bottom border-dark-3">
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Many Components
+                                                            </h6>
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Based on Bootstrap
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="mt-6 mt-lg-12 btn w-100 btn-bg-1">
+                                Get Started
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-6 col-sm-10">
+                                                <div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 border-dark-3">
+                                                    <div>
+                                                        <h5 class="fs-3 fw-bold mb-2 text-action-8">
+                    Starter
+                                                        </h5>
+                                                        <h2 class="display-6 mb-6">
+                    $38/m
+                                                        </h2>
+                                                        <div class="mb-6 border-bottom border-dark-3">
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Many Components
+                                                            </h6>
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Based on Bootstrap
+                                                            </h6>
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        HTML, CSS, LESS
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="mt-6 mt-lg-12 btn w-100 btn-action-8">
+                                Get Started
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active bg-bg-3">
+                                        <div class="row justify-content-center">
+                                            <div class="mb-4 mb-md-0 col-lg-5 col-md-6 col-sm-10">
+                                                <div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 border-bg-2 bg-bg-2">
+                                                    <div>
+                                                        <h5 class="fs-3 fw-bold mb-2 text-dark-2">
+                    Basic
+                                                        </h5>
+                                                        <h2 class="display-6 mb-6">
+                    $118/year
+                                                        </h2>
+                                                        <div class="mb-6 border-bottom border-dark-3">
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Many Components
+                                                            </h6>
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Based on Bootstrap
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="mt-6 mt-lg-12 btn w-100 btn-bg-1">
+                                Get Started
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-6 col-sm-10">
+                                                <div class="d-flex flex-column justify-content-between h-100 p-6 border rounded-2 border-dark-3">
+                                                    <div>
+                                                        <h5 class="fs-3 fw-bold mb-2 text-action-8">
+                    Starter
+                                                        </h5>
+                                                        <h2 class="display-6 mb-6">
+                    $138/year
+                                                        </h2>
+                                                        <div class="mb-6 border-bottom border-dark-3">
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Many Components
+                                                            </h6>
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        Based on Bootstrap
+                                                            </h6>
+                                                        </div>
+                                                        <div class="position-relative mb-5">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-action-8 position-absolute top-50 translate-middle-y">
+                                                                <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z">
+                                                                </path>
+                                                            </svg>
+                                                            <h6 class="ps-7">
+                                        HTML, CSS, LESS
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="mt-6 mt-lg-12 btn w-100 btn-action-8">
+                                Get Started
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Footer 1 -->
+                        <footer class="bg-bg-3 py-8">
+                            <div class="container">
+                                <div class="row mb-4">
+                                    <div class="mb-md-0 mb-8 col-md-4">
+                                        <a href="#">
+                                            <img src="i/logo-dark.png" srcset="i/logo-dark@2x.png 2x" alt="" class="img-fluid aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+                                        </a>
+                                    </div>
+                                    <div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="150">
+                                        <h5 class="mb-4">
+Products
+                                        </h5>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Startup
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Postcards
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Slides
+                                        </a>
+                                    </div>
+                                    <div class="mb-sm-8 mb-md-0 col-md-2 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="250">
+                                        <h5 class="mb-4">
+Articles
+                                        </h5>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Coding
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Design
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Inspiration
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Tutorials
+                                        </a>
+                                    </div>
+                                    <div class="mb-sm-8 mb-sm-0 col-md-2 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="400">
+                                        <h5 class="mb-4">
+About
+                                        </h5>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Contact Us
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Newsletter
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Privacy
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Terms
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Cookies
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 aos-init aos-animate" data-aos="fade-down" data-aos-delay="500">
+                                        <h5 class="mb-4">
+Follow Us
+                                        </h5>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Twitter
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Facebook
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Medium
+                                        </a>
+                                        <a href="#" class="mb-4 me-2 me-sm-0 d-sm-block text-dark-1">
+Dribbble
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="fs-5 mb-0 aos-init aos-animate" data-aos="fade-down" data-aos-delay="650">
+Copyright © 2021 designmodo.com
+                                </p>
+                            </div>
+                        </footer>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" data-integrity="38d870e9c3c4e532551b530706abb811"></script>
+
+
+    
+</body></html>
